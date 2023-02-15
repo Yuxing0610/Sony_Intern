@@ -5,16 +5,12 @@
 ## This is the repository to Use Forward-mode automatic differentation to train a binary neural network
 
 ### next step (According to priority)
-- Use pesudoinvert instead of true invert process to generate the projection matrix of the input space
-- develop math framework for:
- + Binarize directional direvatives during the forward propagation
- + Approximation for softweight
- + use input to generate random vector. Both for linear layer and conv layer.
-- FFA seems working prtty well compare to backpropagation, but still not food enough
+- combine momentum algorithm with projection method
+- generate the random vector according to the statistics of true gradients computed at the backprop checkpoint
+- considr the relation of number of data point and number of samples. (Them together is the number of forward passes that we need to compute)
 
 
-
-### Something now working
+### Something is now working
 - Weight sharing scheme on Genetic algorithm
 - seed version of forward mode autodiff with direction alignment
 - forward mode autodiff anchored with backprop baseline
