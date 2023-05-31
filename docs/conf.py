@@ -15,7 +15,7 @@ author = 'FLOWS Project'
 
 extensions = []
 
-templates_path = ['_templates']
+templates_path = ['_templates', 'sphinx_book_theme']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 
